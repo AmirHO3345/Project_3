@@ -1,0 +1,22 @@
+
+.Container {
+  width: 100% ;
+  margin: 0 auto;
+  padding: 0 1.5rem ;
+
+  @include ScreenResponsive(Phone) {
+    max-width: 54rem ;
+  }
+
+  @include ScreenResponsive(Small_Screen) {
+    max-width: 72rem ;
+  }
+
+  @include ScreenResponsive(Medium_Screen) {
+    max-width: 96rem ;
+  }
+
+  @include ScreenResponsive(Large_Screen) {
+    max-width: 114rem ;
+  }
+}

@@ -1,0 +1,15 @@
+
+/*-----------------------------
+  Responsive Project
+-----------------------------*/
+@mixin ScreenResponsive($BreakPoint) {
+  @if($BreakPoint == Phone) {
+    @media (max-width: 47.9em) { @content } // => 767px
+  } @else if($BreakPoint == Small_Screen) {
+    @media (min-width: 48em) { @content } // => 768px
+  } @else if($BreakPoint == Medium_Screen) {
+    @media (min-width: 62em) { @content } // => 992
+  } @else if($BreakPoint == Large_Screen) {
+    @media (min-width: 75em) { @content } // => 1200
+  }
+}
